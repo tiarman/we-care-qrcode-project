@@ -26,70 +26,70 @@ const qrCode = new QRCodeStyling({
 
 
 const updateQrData = () => {
-  newQrData = "TRAVEL INSURANCE CERTIFICATE"+"\n   "+"POLICY NO-"+qrData.value+"\n    "+"PLAN-"+qrPlan.value+"\n   "+"AGENT-"+qrAgent.value+"\n   "+"PHONE:"+qrTele.value+"\n   "+"FROM:"+qrFrom.value+" TO "+" "+qrTo.value+"\n    "+"COUNTRY OF RESIDENCE-"+qrCountry.value+"\n   "+"APPLICANT NAME-"+qrFullName.value+"\n   "+"DATE OF BIRTH-"+qrBirthDate.value+"\n   "+"PASSPORT NO-"+qrblank.value;
+  newQrData ="TRAVEL INSURANCE CERTIFICATE"+"\n"+"POLICY NO="+"WC-"+qrData.value+"\n"+"PLAN="+qrPlan.value+"\n"+"AGENT="+qrAgent.value+"\n"+"PHONE="+qrTele.value+"\n"+"FROM="+qrFrom.value+" TO "+" "+qrTo.value+"\n"+"COUNTRY OF RESIDENCE="+qrCountry.value+"\n"+"APPLICANT NAME="+qrFullName.value+"\n"+"DATE OF BIRTH="+qrBirthDate.value+"\n"+"PASSPORT NO="+qrblank.value;
   qrCode.update({
     data: newQrData
   });
 };
 const updateQrPlan = () => {
-  newQrData = "TRAVEL INSURANCE CERTIFICATE"+"\n   "+"POLICY NO-"+qrData.value+"\n    "+"PHONE:"+qrTele.value+"\n   "+"AGENT-"+qrAgent.value+"\n  "+"PLAN-"+qrDestination.value+"\n      "+"FROM:"+qrFrom.value+"\n      "+"COUNTRY OF RESIDENCE-"+qrCountry.value+"\n   "+"APPLICANT NAME-"+qrFullName.value+"\n    "+"DATE OF BIRTH-"+qrBirthDate.value+"\n  "+"PASSPORT NO-"+qrblank.value;
+  newQrData ="TRAVEL INSURANCE CERTIFICATE"+"\n"+"POLICY NO="+"WC-"+qrData.value+"\n"+"PLAN="+qrPlan.value+"\n"+"AGENT="+qrAgent.value+"\n"+"PHONE="+qrTele.value+"\n"+"FROM="+qrFrom.value+" TO "+" "+qrTo.value+"\n"+"COUNTRY OF RESIDENCE="+qrCountry.value+"\n"+"APPLICANT NAME="+qrFullName.value+"\n"+"DATE OF BIRTH="+qrBirthDate.value+"\n"+"PASSPORT NO="+qrblank.value;
   qrCode.update({
     data: newQrData
   });
 };
 const updateQrAgent = () => {
-  newQrData ="TRAVEL INSURANCE CERTIFICATE"+"\n   "+"POLICY NO-"+qrData.value+"\n    "+"PLAN-"+qrPlan.value+"\n   "+"AGENT-"+qrAgent.value+"\n   "+"PHONE:"+qrTele.value+"\n   "+"FROM:"+qrFrom.value+" TO "+" "+qrTo.value+"\n    "+"COUNTRY OF RESIDENCE-"+qrCountry.value+"\n   "+"APPLICANT NAME-"+qrFullName.value+"\n    "+"DATE OF BIRTH-"+qrBirthDate.value+"\n  "+"PASSPORT NO-"+qrblank.value;
+  newQrData ="TRAVEL INSURANCE CERTIFICATE"+"\n"+"POLICY NO="+"WC-"+qrData.value+"\n"+"PLAN="+qrPlan.value+"\n"+"AGENT="+qrAgent.value+"\n"+"PHONE="+qrTele.value+"\n"+"FROM="+qrFrom.value+" TO "+" "+qrTo.value+"\n"+"COUNTRY OF RESIDENCE="+qrCountry.value+"\n"+"APPLICANT NAME="+qrFullName.value+"\n"+"DATE OF BIRTH="+qrBirthDate.value+"\n"+"PASSPORT NO="+qrblank.value;
   qrCode.update({
     data: newQrData
   });
 };
 const updateQrTele = () => {
-  newQrData ="TRAVEL INSURANCE CERTIFICATE"+"\n   "+"POLICY NO-"+qrData.value+"\n    "+"PLAN-"+qrPlan.value+"\n   "+"AGENT-"+qrAgent.value+"\n   "+"PHONE:"+qrTele.value+"\n   "+"FROM:"+qrFrom.value+" TO "+" "+qrTo.value+"\n    "+"COUNTRY OF RESIDENCE-"+qrCountry.value+"\n   "+"APPLICANT NAME-"+qrFullName.value+"\n    "+"DATE OF BIRTH-"+qrBirthDate.value+"\n  "+"PASSPORT NO-"+qrblank.value;
+  newQrData ="TRAVEL INSURANCE CERTIFICATE"+"\n"+"POLICY NO="+"WC-"+qrData.value+"\n"+"PLAN="+qrPlan.value+"\n"+"AGENT="+qrAgent.value+"\n"+"PHONE="+qrTele.value+"\n"+"FROM="+qrFrom.value+" TO "+" "+qrTo.value+"\n"+"COUNTRY OF RESIDENCE="+qrCountry.value+"\n"+"APPLICANT NAME="+qrFullName.value+"\n"+"DATE OF BIRTH="+qrBirthDate.value+"\n"+"PASSPORT NO="+qrblank.value;
   qrCode.update({
     data: newQrData
   });
 };
 
 const updateQrDestination = () => {
-  newQrData = "TRAVEL INSURANCE CERTIFICATE"+"\n   "+"POLICY NO-"+qrData.value+"\n    "+"PLAN-"+qrPlan.value+"\n   "+"AGENT-"+qrAgent.value+"\n   "+"PHONE:"+qrTele.value+"\n   "+"FROM:"+qrFrom.value+" TO "+" "+qrTo.value+"\n    "+"COUNTRY OF RESIDENCE-"+qrCountry.value+"\n   "+"APPLICANT NAME-"+qrFullName.value+"\n    "+"DATE OF BIRTH-"+qrBirthDate.value+"\n  "+"PASSPORT NO-"+qrblank.value;
+  newQrData ="TRAVEL INSURANCE CERTIFICATE"+"\n"+"POLICY NO="+"WC-"+qrData.value+"\n"+"PLAN="+qrPlan.value+"\n"+"AGENT="+qrAgent.value+"\n"+"PHONE="+qrTele.value+"\n"+"FROM="+qrFrom.value+" TO "+" "+qrTo.value+"\n"+"COUNTRY OF RESIDENCE="+qrCountry.value+"\n"+"APPLICANT NAME="+qrFullName.value+"\n"+"DATE OF BIRTH="+qrBirthDate.value+"\n"+"PASSPORT NO="+qrblank.value;
   qrCode.update({
     data: newQrData
   });
 };
 const updateQrFrom = () => {
-  newQrData = "TRAVEL INSURANCE CERTIFICATE"+"\n   "+"POLICY NO-"+qrData.value+"\n    "+"PLAN-"+qrPlan.value+"\n   "+"AGENT-"+qrAgent.value+"\n   "+"PHONE:"+qrTele.value+"\n   "+"FROM:"+qrFrom.value+" TO "+" "+qrTo.value+"\n    "+"COUNTRY OF RESIDENCE-"+qrCountry.value+"\n   "+"APPLICANT NAME-"+qrFullName.value+"\n    "+"DATE OF BIRTH-"+qrBirthDate.value+"\n  "+"PASSPORT NO-"+qrblank.value;
+  newQrData ="TRAVEL INSURANCE CERTIFICATE"+"\n"+"POLICY NO="+"WC-"+qrData.value+"\n"+"PLAN="+qrPlan.value+"\n"+"AGENT="+qrAgent.value+"\n"+"PHONE="+qrTele.value+"\n"+"FROM="+qrFrom.value+" TO "+" "+qrTo.value+"\n"+"COUNTRY OF RESIDENCE="+qrCountry.value+"\n"+"APPLICANT NAME="+qrFullName.value+"\n"+"DATE OF BIRTH="+qrBirthDate.value+"\n"+"PASSPORT NO="+qrblank.value;
   qrCode.update({
     data: newQrData
   });
 };
 const updateQrTo = () => {
-  newQrData = "TRAVEL INSURANCE CERTIFICATE"+"\n   "+"POLICY NO-"+qrData.value+"\n    "+"PLAN-"+qrPlan.value+"\n   "+"AGENT-"+qrAgent.value+"\n   "+"PHONE:"+qrTele.value+"\n   "+"FROM:"+qrFrom.value+" TO "+" "+qrTo.value+"\n   "+"COUNTRY OF RESIDENCE-"+qrCountry.value+"\n   "+"APPLICANT NAME-"+qrFullName.value+"\n    "+"DATE OF BIRTH-"+qrBirthDate.value+"\n  "+"PASSPORT NO-"+qrblank.value;
+  newQrData ="TRAVEL INSURANCE CERTIFICATE"+"\n"+"POLICY NO="+"WC-"+qrData.value+"\n"+"PLAN="+qrPlan.value+"\n"+"AGENT="+qrAgent.value+"\n"+"PHONE="+qrTele.value+"\n"+"FROM="+qrFrom.value+" TO "+" "+qrTo.value+"\n"+"COUNTRY OF RESIDENCE="+qrCountry.value+"\n"+"APPLICANT NAME="+qrFullName.value+"\n"+"DATE OF BIRTH="+qrBirthDate.value+"\n"+"PASSPORT NO="+qrblank.value;
   qrCode.update({
     data: newQrData
   });
 };
 const updateQrCountry = () => {
-  newQrData = "TRAVEL INSURANCE CERTIFICATE"+"\n   "+"POLICY NO-"+qrData.value+"\n    "+"PLAN-"+qrPlan.value+"\n   "+"AGENT-"+qrAgent.value+"\n   "+"PHONE:"+qrTele.value+"\n   "+"FROM:"+qrFrom.value+" TO "+" "+qrTo.value+"\n    "+"COUNTRY OF RESIDENCE-"+qrCountry.value+"\n   "+"APPLICANT NAME-"+qrFullName.value+"\n    "+"DATE OF BIRTH-"+qrBirthDate.value+"\n  "+"PASSPORT NO-"+qrblank.value;
+  newQrData ="TRAVEL INSURANCE CERTIFICATE"+"\n"+"POLICY NO="+"WC-"+qrData.value+"\n"+"PLAN="+qrPlan.value+"\n"+"AGENT="+qrAgent.value+"\n"+"PHONE="+qrTele.value+"\n"+"FROM="+qrFrom.value+" TO "+" "+qrTo.value+"\n"+"COUNTRY OF RESIDENCE="+qrCountry.value+"\n"+"APPLICANT NAME="+qrFullName.value+"\n"+"DATE OF BIRTH="+qrBirthDate.value+"\n"+"PASSPORT NO="+qrblank.value;
   qrCode.update({
     data: newQrData
   });
 };
 
 const updateQrFullName = () => {
-  newQrData ="TRAVEL INSURANCE CERTIFICATE"+"\n   "+"POLICY NO-"+qrData.value+"\n    "+"PLAN-"+qrPlan.value+"\n   "+"AGENT-"+qrAgent.value+"\n   "+"PHONE:"+qrTele.value+"\n   "+"FROM:"+qrFrom.value+" TO "+" "+qrTo.value+"\n    "+"COUNTRY OF RESIDENCE-"+qrCountry.value+"\n   "+"APPLICANT NAME-"+qrFullName.value+"\n    "+"DATE OF BIRTH-"+qrBirthDate.value+"\n   "+"PASSPORT NO-"+qrblank.value;
+  newQrData ="TRAVEL INSURANCE CERTIFICATE"+"\n"+"POLICY NO="+"WC-"+qrData.value+"\n"+"PLAN="+qrPlan.value+"\n"+"AGENT="+qrAgent.value+"\n"+"PHONE="+qrTele.value+"\n"+"FROM="+qrFrom.value+" TO "+" "+qrTo.value+"\n"+"COUNTRY OF RESIDENCE="+qrCountry.value+"\n"+"APPLICANT NAME="+qrFullName.value+"\n"+"DATE OF BIRTH="+qrBirthDate.value+"\n"+"PASSPORT NO="+qrblank.value;
   qrCode.update({
     data: newQrData
   });
 };
 const updateQrBirth = () => {
-  newQrData ="TRAVEL INSURANCE CERTIFICATE"+"\n   "+"POLICY NO-"+qrData.value+"\n    "+"PLAN-"+qrPlan.value+"\n   "+"AGENT-"+qrAgent.value+"\n   "+"PHONE:"+qrTele.value+"\n   "+"FROM:"+qrFrom.value+" TO "+" "+qrTo.value+"\n   "+"COUNTRY OF RESIDENCE-"+qrCountry.value+"\n   "+"APPLICANT NAME-"+qrFullName.value+"\n    "+"DATE OF BIRTH-"+qrBirthDate.value+"\n   "+"PASSPORT NO-"+qrblank.value;
+  newQrData ="TRAVEL INSURANCE CERTIFICATE"+"\n"+"POLICY NO="+"WC-"+qrData.value+"\n"+"PLAN="+qrPlan.value+"\n"+"AGENT="+qrAgent.value+"\n"+"PHONE="+qrTele.value+"\n"+"FROM="+qrFrom.value+" TO "+" "+qrTo.value+"\n"+"COUNTRY OF RESIDENCE="+qrCountry.value+"\n"+"APPLICANT NAME="+qrFullName.value+"\n"+"DATE OF BIRTH="+qrBirthDate.value+"\n"+"PASSPORT NO="+qrblank.value;
   qrCode.update({
     data: newQrData
   });
 };
 
 const updateQrblank = () => {
-  newQrData = "TRAVEL INSURANCE CERTIFICATE"+"\n   "+"POLICY NO-"+qrData.value+"\n    "+"PLAN-"+qrPlan.value+"\n   "+"AGENT-"+qrAgent.value+"\n   "+"PHONE:"+qrTele.value+"\n   "+"FROM:"+qrFrom.value+" TO "+" "+qrTo.value+"\n    "+"COUNTRY OF RESIDENCE-"+qrCountry.value+"\n   "+"APPLICANT NAME-"+qrFullName.value+"\n    "+"DATE OF BIRTH-"+qrBirthDate.value+"\n  "+"PASSPORT NO-"+qrblank.value;;
+  newQrData ="TRAVEL INSURANCE CERTIFICATE"+"\n"+"POLICY NO="+"WC-"+qrData.value+"\n"+"PLAN="+qrPlan.value+"\n"+"AGENT="+qrAgent.value+"\n"+"PHONE="+qrTele.value+"\n"+"FROM="+qrFrom.value+" TO "+" "+qrTo.value+"\n"+"COUNTRY OF RESIDENCE="+qrCountry.value+"\n"+"APPLICANT NAME="+qrFullName.value+"\n"+"DATE OF BIRTH="+qrBirthDate.value+"\n"+"PASSPORT NO="+qrblank.value;
   qrCode.update({
     data: newQrData
   });

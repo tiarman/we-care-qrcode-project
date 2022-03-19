@@ -38,7 +38,7 @@
 
                         </div>
 
-                        <div style="margin-top: -30px;">
+                        <div style="margin-top: -20px; margin-bottom: 25px;">
                             <h5 style="font-weight: 800;">TRAVEL INSURANCE CERTIFICATE</h5>
                             
 
@@ -55,65 +55,72 @@
                 
                       
                             <div class="row">
-                                <div style="text-align: left; margin-left: 15px; font-size: 11px;">
-                                    <p for="dataInput" style="font-weight: 700;">Policy No: <span><input onchange="updateQrData();" name="dataInput" id="dataInput" placeholder="enter policy" required class="date-container" style="width: 80px;" type="text"></span></p>
+                                <div style="text-align: left; margin-left: 15px; font-size: 11px; line-height: 13px;">
+                                    <p for="dataInput" style="font-weight: 700;line-height: 13px;">POLICY NO: <span><input onchange="updateQrData();" name="dataInput" id="dataInput" placeholder="enter policy" required class="date-container" style="width: 80px;" type="text"></span></p>
                                     <!-- <p style="background-color: rgba(66, 65, 65, 0.151); width: 160px;font-weight: 650; padding: 4px; margin-top: -10px; font-size: 81.25%;">DESTINATION</p>
                                     <div style="margin-top: -13px;"><input onchange="updateQrDestination();" name="dataInput" id="destination" placeholder="john" required class="date-container" style="width: 160px;font-weight: 700; background-color: rgba(66, 65, 65, 0.151);" type="text" name="" id=""/></div> -->
                                     <p style="background-color: rgba(66, 65, 65, 0.151); width: 160px;font-weight: 650; padding: 4px; margin-top: -12px; font-size: 81.25%;">DESTINATION</p>
-                                    <div style="margin-top: -13px;"><select style="background-color: rgba(66, 65, 65, 0.151); width: 160px;font-weight: 650; padding: 4px; font-size: 85.25%; border: none;" id="cars">
+                                    <div style="margin-top: -13px;line-height: 13px;"><select style="background-color: rgba(66, 65, 65, 0.151);line-height: 13px; width: 160px;font-weight: 650; padding: 4px; font-size: 85.25%; border: none;" id="cars">
                                         <option style="font-size: 15px;" value="canada">Saudi Arabia</option>
                                         <option style="font-size: 15px;" value="singapur">UAE</option>
+                                        <option style="font-size: 15px;" value="singapur">OMAN</option>
+                                        <option style="font-size: 15px;" value="singapur">KUWAIT</option>
+                                        <option style="font-size: 15px;" value="singapur">QATAR</option>
                                       </select></div>
                                 </div>
 
 
                                 <div style="text-align: left; margin-left: 5px; font-size: 11px">
-                                    <p style="margin-top: 4px; font-weight: 700;">ISSUE DATE:</p>
+                                    <p style="margin-top: 1px; font-weight: 700;">ISSUE DATE:</p>
                                     <p for="dataInput" style="background-color: rgba(66, 65, 65, 0.151); padding: 2px; width: 110px;font-weight: 650; margin-top: -10px; font-size: 81.25%;">FROM</p>
                                     <div style="margin-top: -13px;"><input onchange="updateQrFrom();" name="dataInput" id="from" placeholder="dd/mm/yy" required class="date-container" placeholder="dd/mm/yy" style="width: 110px; background-color: rgba(66, 65, 65, 0.151); font-weight: 700;" type="text" name="" id=""/></div>
                                   </div>
 
 
-                                <div style="text-align: left; margin-left: 5px; font-size: 11px">
-                                    <div style="margin-top: 3px;"><input class="date-container" placeholder="dd/mm/yy" style="width: 110px; font-weight: 750;" type="text" name="" id=""/></div>
+                                <div style="text-align: left; margin-top: -4px; font-size: 11px">
+                                    <div style="margin-top: 3px; margin-left: -20px;"><input class="date-container" placeholder="dd/mm/yy" style="width: 110px; font-weight: 750;" type="text" name="" id=""/></div>
                                     <p for="dataInput" style="background-color: rgba(66, 65, 65, 0.151); padding: 2px; width: 110px;font-weight: 650; margin-top: 6px; font-size: 81.25%;">TO</p>
                                     <div style="margin-top: -13px;"><input onchange="updateQrTo();" name="dataInput" id="to" placeholder="dd/mm/yy" required class="date-container" placeholder="dd/mm/yy" style="width: 110px; background-color: rgba(66, 65, 65, 0.151); font-weight: 700;" type="text" name="" id=""/></div>
                                  </div>
 
 
-                                <div style="text-align: left; margin-left: 5px; font-size: 11px;">
+                                <div style="text-align: left; margin-left: 5px; font-size: 11px; margin-top: -7px;">
                                     <!-- <p style="font-weight: 700;">PLAN <span><input onchange="updateQrPlan();" name="dataInput" id="plan" placeholder="john" required class="date-container" style="width: 110px;" type="text"></span></p> -->
-                                    <p style="font-weight: 700;">PLAN <span><select onChange="updateQrPlan();" name="dataInput" id="plan" required style="width: 100px;font-weight: 600; padding: 4px; font-size: 85.25%; border: none;" id="cars">
+                                    <p style="font-weight: 700;margin-top: 3px;">PLAN <span><select onChange="updateQrPlan();" name="dataInput" id="plan" required style="width: 100px;font-weight: 500; padding: 4px; font-size: 85.25%; border: none;" id="cars">
                                         <option style="font-size: 14px" value="Covid Plan (KSA)">Covid Plan (KSA)</option>
                                         <option style="font-size: 14px;" value="A Covid 19 (UAE)">A Covid 19 (UAE)</option>
                                       </select></span></p>
 
 
 
-                                    <p for="dataInput" style="background-color: rgba(66, 65, 65, 0.151); width: 160px; font-weight: 650; padding: 4px; margin-top: -10px; font-size: 81.25%;">COUNTRY OF RESIDENCE</p>
-                                    <div style="margin-top: -13px;"><input onchange="updateQrCountry();" name="dataInput" id="country" default Value="BANGLADESH" required class="date-container" style="width: 160px; font-weight: 700; background-color: rgba(66, 65, 65, 0.151);" type="text" name="" id=""/></div>                          
+                                    <p for="dataInput" style="background-color: rgba(66, 65, 65, 0.151); width: 160px; font-weight: 650; padding: 4px; margin-top: -14px; font-size: 81.25%;">COUNTRY OF RESIDENCE</p>
+                                    <div style="margin-top: -13px;"><input onchange="updateQrCountry();" name="dataInput" id="country" default Value="BANGLADESH" readonly required class="date-container" style="width: 160px; font-weight: 700; background-color: rgba(66, 65, 65, 0.151);" type="text" name="" id=""/></div>                          
                                 </div>
 
 
-                                <div style="text-align: left; margin-left: 5px; font-size: 11px;">
-                                    <p for="dataInput" style="font-weight: 700;">AGENT: <span><input onchange="updateQrAgent();" default value="WECARE IND" name="dataInput" id="agent" placeholder="john" required class="date-container" style="width: 80px; font-weight: 600;" type="text"></span></p>
-                                    <p for="dataInput" style="background-color: rgba(66, 65, 65, 0.151); width: 160px;font-weight: 650; padding: 4px; margin-top: -10px; font-size: 81.25%;">TELEPHONE NO </p>
-                                    <div style="margin-top: -13px;"><input onchange="updateQrTele();" name="dataInput" id="telep" placeholder="018 xxxxxxxx" required class="date-container" style="width: 160px;font-weight: 700; background-color: rgba(66, 65, 65, 0.151);" type="text" name="" id=""/></div>
+                                <div style="text-align: left; margin-left: 5px; font-size: 11px; margin-top: -7px;">
+                                    <!-- <p for="dataInput" style="font-weight: 700;">AGENT: <span><input onchange="updateQrAgent();" default value="WECARE IND" name="dataInput" id="agent" placeholder="john" required class="date-container" style="width: 80px; font-weight: 600;" type="text"></span></p> -->
+                                    <p for="dataInput" style="font-weight: 700; margin-top: 3px;">AGENT: <span><select onchange="updateQrAgent();" name="dataInput" id="agent" required style="width: 120px;font-weight: 600; padding: 4px; font-size: 85.25%; border: none;" id="cars">
+                                        <option style="font-size: 14px" value="WECARE IND">WECARE IND</option>
+                                        <option style="font-size: 14px;" value="WeCare Protection LLC">WeCare Protection LLC</option>
+                                      </select></span></p>
+                                    <p for="dataInput" style="background-color: rgba(66, 65, 65, 0.151); width: 160px;font-weight: 650; padding: 4px; margin-top: -10px; font-size: 81.25%; margin-top: -15px;">TELEPHONE NO </p>
+                                    <div style="margin-top: -13px;"><input onchange="updateQrTele();" name="dataInput" id="telep" required class="date-container" style="width: 160px;font-weight: 700; background-color: rgba(66, 65, 65, 0.151);" type="text" name="" id=""/></div>
     
                                 </div>
                             </div>
     
     
     
-                            <div class="row" style="margin-top: 30px;">
+                            <div class="row" style="margin-top: 15px; line-height: 10px;">
                                 <div style="text-align: left; margin-left: 15px; font-size: 11px;">                                
                                     <p for="dataInput" style="background-color: rgba(66, 65, 65, 0.151); width: 160px; padding: 4px; margin-top: -10px; font-size: 81.25%; font-weight: 650;">FULL NAME  </p>
                                     <div style="margin-top: -13px;"><input onchange="updateQrFullName();" name="dataInput" id="fullname" placeholder="enter full name" required class="date-container" style="width: 160px; background-color: rgba(66, 65, 65, 0.151); font-weight: 700;" type="text" name="" id=""/></div>
     
                                 </div>
                                 <div style="text-align: left; margin-left: 5px; font-size: 11px;">
-                                    <p for="dataInput" style="background-color: rgba(66, 65, 65, 0.151); width: 225px; padding: 4px;font-weight: 650; margin-top: -10px; font-size: 81.25%;">BIRTH OF DATE  </p>
-                                    <div style="margin-top: -13px;"><input onchange="updateQrBirth();" name="dataInput" id="birthdate" placeholder="enter birth date" required class="date-container" style="width: 225px; background-color: rgba(66, 65, 65, 0.151); font-weight: 700;" type="text" name="" id=""/></div>
+                                    <p for="dataInput" style="background-color: rgba(66, 65, 65, 0.151); width: 220px; padding: 4px;font-weight: 650; margin-top: -10px; font-size: 81.25%;">BIRTH OF DATE  </p>
+                                    <div style="margin-top: -13px;"><input onchange="updateQrBirth();" name="dataInput" id="birthdate" placeholder="enter birth date" required class="date-container" style="width: 220px; background-color: rgba(66, 65, 65, 0.151); font-weight: 700;" type="text" name="" id=""/></div>
     
                                 </div>
     
