@@ -10,13 +10,7 @@ qrCountry = document.getElementById('country');
 qrFullName = document.getElementById('fullname');
 qrBirthDate = document.getElementById('birthdate');
 qrblank = document.getElementById('blank');
-// qrLastname = document.getElementById('lastname');
-// qrdob = document.getElementById('dob');
-// qrnat = document.getElementById('nat');
 
-// qrImage = document.getElementById('imageInput');
-// qrColor = document.getElementById('colorInput');
-// qrType = document.getElementById('typeInput');
 
 const qrCode = new QRCodeStyling({
   width: 180,
@@ -93,24 +87,7 @@ const updateQrBirth = () => {
     data: newQrData
   });
 };
-// const updateQrlastname = () => {
-//   newQrData = qrData.value+qrDestination.value+qrFrom.value+qrLastname.value;
-//   qrCode.update({
-//     data: newQrData
-//   });
-// };
-// const updateQrdob = () => {
-//   newQrData = qrData.value+qrDestination.value+qrFrom.value+qrLastname.value+qrdob.value;
-//   qrCode.update({
-//     data: newQrData
-//   });
-// };
-// const updateQrnat = () => {
-//   newQrData = qrData.value+qrDestination.value+qrFrom.value+qrLastname.value+qrdob.value+qrnat.value;
-//   qrCode.update({
-//     data: newQrData
-//   });
-// };
+
 const updateQrblank = () => {
   newQrData = "TRAVEL INSURANCE CERTIFICATE"+"\n   "+"POLICY NO-"+qrData.value+"\n    "+"PLAN-"+qrPlan.value+"\n   "+"AGENT-"+qrAgent.value+"\n   "+"PHONE:"+qrTele.value+"\n   "+"FROM:"+qrFrom.value+" TO "+" "+qrTo.value+"\n    "+"COUNTRY OF RESIDENCE-"+qrCountry.value+"\n   "+"APPLICANT NAME-"+qrFullName.value+"\n    "+"DATE OF BIRTH-"+qrBirthDate.value+"\n  "+"PASSPORT NO-"+qrblank.value;;
   qrCode.update({
