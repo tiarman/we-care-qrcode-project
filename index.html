@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css" />
+    <script type="text/javascript" src="https://unpkg.com/qr-code-styling/lib/qr-code-styling.js"></script>
+    <script src="index.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.js"></script>
+
+</head>
+
+<body>
+    <div class="container d-flex justify-content-center mt-50 mb-50">
+        <div class="row">
+            <div class="col-md-12 text-right mb-3">
+                <button class="btn btn-primary" id="download"> download pdf</button>
+            </div>
+            <div class="col-md-12">
+                <div class="card" id="invoice">
+
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div style="margin-top: -7px;" class="mb-4 pull-left">
+
+                                    <ul class="list list-unstyled mb-0 text-left">
+                                        <h3 class="image-container"><img src="./images/wecare.png" alt=""></h3>
+
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div style="margin-top: -30px;">
+                            <h5 style="font-weight: 800;">TRAVEL INSURANCE CERTIFICATE</h5>
+                            
+
+                        </div>
+                       
+
+        
+                          
+                        
+                          
+                            
+                          
+                
+                
+                      
+                            <div class="row">
+                                <div style="text-align: left; margin-left: 15px; font-size: 11px;">
+                                    <p for="dataInput" style="font-weight: 700;">Policy No: <span><input onchange="updateQrData();" name="dataInput" id="dataInput" placeholder="enter policy" required class="date-container" style="width: 80px;" type="text"></span></p>
+                                    <!-- <p style="background-color: rgba(66, 65, 65, 0.151); width: 160px;font-weight: 650; padding: 4px; margin-top: -10px; font-size: 81.25%;">DESTINATION</p>
+                                    <div style="margin-top: -13px;"><input onchange="updateQrDestination();" name="dataInput" id="destination" placeholder="john" required class="date-container" style="width: 160px;font-weight: 700; background-color: rgba(66, 65, 65, 0.151);" type="text" name="" id=""/></div> -->
+                                    <p style="background-color: rgba(66, 65, 65, 0.151); width: 160px;font-weight: 650; padding: 4px; margin-top: -12px; font-size: 81.25%;">DESTINATION</p>
+                                    <div style="margin-top: -13px;"><select style="background-color: rgba(66, 65, 65, 0.151); width: 160px;font-weight: 650; padding: 4px; font-size: 85.25%; border: none;" id="cars">
+                                        <option style="font-size: 15px;" value="canada">Saudi Arabia</option>
+                                        <option style="font-size: 15px;" value="singapur">UAE</option>
+                                      </select></div>
+                                </div>
+
+
+                                <div style="text-align: left; margin-left: 5px; font-size: 11px">
+                                    <p style="margin-top: 4px; font-weight: 700;">ISSUE DATE:</p>
+                                    <p for="dataInput" style="background-color: rgba(66, 65, 65, 0.151); padding: 2px; width: 110px;font-weight: 650; margin-top: -10px; font-size: 81.25%;">FROM</p>
+                                    <div style="margin-top: -13px;"><input onchange="updateQrFrom();" name="dataInput" id="from" placeholder="dd/mm/yy" required class="date-container" placeholder="dd/mm/yy" style="width: 110px; background-color: rgba(66, 65, 65, 0.151); font-weight: 700;" type="text" name="" id=""/></div>
+                                  </div>
+
+
+                                <div style="text-align: left; margin-left: 5px; font-size: 11px">
+                                    <div style="margin-top: 3px;"><input class="date-container" placeholder="dd/mm/yy" style="width: 110px; font-weight: 750;" type="text" name="" id=""/></div>
+                                    <p for="dataInput" style="background-color: rgba(66, 65, 65, 0.151); padding: 2px; width: 110px;font-weight: 650; margin-top: 6px; font-size: 81.25%;">TO</p>
+                                    <div style="margin-top: -13px;"><input onchange="updateQrTo();" name="dataInput" id="to" placeholder="dd/mm/yy" required class="date-container" placeholder="dd/mm/yy" style="width: 110px; background-color: rgba(66, 65, 65, 0.151); font-weight: 700;" type="text" name="" id=""/></div>
+                                 </div>
+
+
+                                <div style="text-align: left; margin-left: 5px; font-size: 11px;">
+                                    <!-- <p style="font-weight: 700;">PLAN <span><input onchange="updateQrPlan();" name="dataInput" id="plan" placeholder="john" required class="date-container" style="width: 110px;" type="text"></span></p> -->
+                                    <p style="font-weight: 700;">PLAN <span><select onChange="updateQrPlan();" name="dataInput" id="plan" required style="width: 100px;font-weight: 600; padding: 4px; font-size: 85.25%; border: none;" id="cars">
+                                        <option style="font-size: 14px" value="Covid Plan (KSA)">Covid Plan (KSA)</option>
+                                        <option style="font-size: 14px;" value="A Covid 19 (UAE)">A Covid 19 (UAE)</option>
+                                      </select></span></p>
+
+
+
+                                    <p for="dataInput" style="background-color: rgba(66, 65, 65, 0.151); width: 160px; font-weight: 650; padding: 4px; margin-top: -10px; font-size: 81.25%;">COUNTRY OF RESIDENCE</p>
+                                    <div style="margin-top: -13px;"><input onchange="updateQrCountry();" name="dataInput" id="country" default Value="BANGLADESH" required class="date-container" style="width: 160px; font-weight: 700; background-color: rgba(66, 65, 65, 0.151);" type="text" name="" id=""/></div>                          
+                                </div>
+
+
+                                <div style="text-align: left; margin-left: 5px; font-size: 11px;">
+                                    <p for="dataInput" style="font-weight: 700;">AGENT: <span><input onchange="updateQrAgent();" default value="WECARE IND" name="dataInput" id="agent" placeholder="john" required class="date-container" style="width: 80px; font-weight: 600;" type="text"></span></p>
+                                    <p for="dataInput" style="background-color: rgba(66, 65, 65, 0.151); width: 160px;font-weight: 650; padding: 4px; margin-top: -10px; font-size: 81.25%;">TELEPHONE NO </p>
+                                    <div style="margin-top: -13px;"><input onchange="updateQrTele();" name="dataInput" id="telep" placeholder="018 xxxxxxxx" required class="date-container" style="width: 160px;font-weight: 700; background-color: rgba(66, 65, 65, 0.151);" type="text" name="" id=""/></div>
+    
+                                </div>
+                            </div>
+    
+    
+    
+                            <div class="row" style="margin-top: 30px;">
+                                <div style="text-align: left; margin-left: 15px; font-size: 11px;">                                
+                                    <p for="dataInput" style="background-color: rgba(66, 65, 65, 0.151); width: 160px; padding: 4px; margin-top: -10px; font-size: 81.25%; font-weight: 650;">FULL NAME  </p>
+                                    <div style="margin-top: -13px;"><input onchange="updateQrFullName();" name="dataInput" id="fullname" placeholder="enter full name" required class="date-container" style="width: 160px; background-color: rgba(66, 65, 65, 0.151); font-weight: 700;" type="text" name="" id=""/></div>
+    
+                                </div>
+                                <div style="text-align: left; margin-left: 5px; font-size: 11px;">
+                                    <p for="dataInput" style="background-color: rgba(66, 65, 65, 0.151); width: 225px; padding: 4px;font-weight: 650; margin-top: -10px; font-size: 81.25%;">BIRTH OF DATE  </p>
+                                    <div style="margin-top: -13px;"><input onchange="updateQrBirth();" name="dataInput" id="birthdate" placeholder="enter birth date" required class="date-container" style="width: 225px; background-color: rgba(66, 65, 65, 0.151); font-weight: 700;" type="text" name="" id=""/></div>
+    
+                                </div>
+    
+                                <div style="text-align: left; margin-left: 5px; font-size: 11px;">
+                                    <p for="dataInput" style="background-color: rgba(66, 65, 65, 0.151); width: 160px;font-weight: 650; padding: 4px; margin-top: -10px; font-size: 81.25%;">PASSPORT</p>
+                                    <div style="margin-top: -13px;"><input onchange="updateQrblank();" name="dataInput" id="blank" placeholder="enter passport no" required class="date-container" style="width: 160px; background-color: rgba(66, 65, 65, 0.151); font-weight: 700;" type="text" name="" id=""/></div>
+    
+                                </div>
+                                
+                          
+                                </div>
+                  
+                           
+                        
+ 
+
+
+
+
+                        <p style="text-align: left; margin-top: 25px; font-size: 10px; font-style: italic; line-height: 13px;">Contrary to any stipulations stated in the General Conditions,the plan subscribed to,under this Letter of Confirmation, covers exclusively the below <br/>
+                            mentioned Benefits, Limitations & Excesses shown in the table hereafter. <br/>
+                            The General Conditions form an integral part of this Letter of Confirmation. <br/>
+                            For more info/modification regarding your policy, kindly do not hesitate to contact your authorized agent or e­mail us on enquiry@wecare­protection.com </p>
+                   
+                    <div class="table-continer" style="margin-top: 15px;">
+                        <table>
+                            <tr>
+
+                            </tr>
+                            <tr>
+                                <td style="font-weight: 800;">BENEFITS  </td>
+                                <td style="font-weight: 800;">SUM INSURED  
+                                </td>
+                                <td style="font-weight: 800;">EXCESS</td>
+                            </tr>
+                            <tr>
+                                <td>Emergency Medical expenses due to COVID­19
+                                </td>
+                                <td>Up to $ 15 000 
+                                </td>
+                                <td>0
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Quarantine expenses due to COVID­19  </td>
+                                <td>Up to $100 Per Day Max 14 Days 
+                                </td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td>Emergency Medical Evacuation & Repatriation due to COVID­19  </td>
+                                <td>Up to $10 000*  
+                                </td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td>Repatriation of Mortal remains  </td>
+                                <td>Real Cost   </td>
+                                <td>0
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Emergency Dental Coverage  </td>
+                                <td>Up to $ 100   </td>
+                                <td>$30
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Flight Cancelation   </td>
+                                <td>Up to $ 50  
+                                </td>
+                                <td>6 Hours 
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Loss Of baggage   </td>
+                                <td>Up to $ 100  
+                                </td>
+                                <td>$25 
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Delay Of baggage    </td>
+                                <td>Up to $ 50 
+                                </td>
+                                <td>12 Hours 
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Loss Of Passport     </td>
+                                <td>Up to $ 100  
+                                </td>
+                                <td>0
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+
+
+                    <section style="text-align: left; margin-top: 20px;">
+                        <p style="text-decoration:underline; font-weight: 700;">Important Notes: </p>
+                        <p style="font-size: 10px; margin-top: -15px; line-height: 13px;">­Upon calling the Alarm Center and claim being processed on direct billing procedure, no deductible shall apply for insured up to 70 years old <br/>
+                            In all cases,deductible shall apply for Insured above 70 years old. <br/>
+                            Deductible shall be maintained for all insured bracket of age if claims are accepted and processed on reimbursement basis. <br/>
+                            (Please refer to the General Conditions for all deductiable details) <br/>
+                            In case claim is accepted on reimbursement,please refer to the General Conditions. <br/>
+                            ­This policy is specially designed to cover Covid­19 related expenses only.(Please carefully read the general conditions) <br/>
+                            <br/>
+                            Coverage in the USA, Canada, Japan & Australia for Emergency Medical Expenses and Evacuation & Repatriation due to Covid­19 is limited to US $ <br/>
+                            15,000 per benefit. </p>
+                    </section>
+
+
+
+
+                    
+                    <section style="margin-top: 10px; text-align: left;margin-bottom: 120px;">
+                        <p>Confirmation code: </p>
+                        <div style="margin-left: -12px; margin-top: -20px;" id="canvas"></div>
+                        <p>For official use,scan the above code to validate this confirmation letter</p>
+
+                    </section>
+                
+                    <div class="row footer-container" style="text-align: left; margin-top: -110px;">
+                        <div class="col-md-6">
+                                <p> <span style="font-weight: 600;">PLEASE KEEP THIS LETTER OF CONFIRMATION WITH YOU 
+                                    AT ALL TIMES <br/></span> Claims must be reported within 48 hours from occurrence of the 
+                                    event and all related original documents must be submitted to the 
+                                    Company by the beneficiary within four (4) months maximum. </p>
+
+                        </div>
+                        <div class="col-md-6">
+                            <p>in case of emergency or claims of assistance,call us on: <span style="color: rgb(24, 209, 132);">(+971) 291 
+                                44353 847</span> or send e­mail to: <span style="color: rgb(24, 209, 132);">info@wecare­protection.com</span> You will
+                                be asked to provide the reference of this letter and/or show this 
+                                document. This purchase is non­refundable.Please refer to your 
+                                receipt </p>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<script type="text/javascript" src="qr.js"></script>
+</body>
+
+</html>
